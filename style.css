@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url(cafe.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 15px;
+    margin: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('cafe.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.navbar a{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+
+}
+.navbar a:hover{
+    color: yellow;
+}
+@media (max-width: 768px) {
+    /* تعديلات خاصة بالموبايل */
+}
+h1{
+    color: orange;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+h2{
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+p{
+    color: orange;
+    font-size: 25px;
+    text-align: center;
+        word-spacing: 20%;
+
+}
+.btn{
+    padding: 15px;
+    color: white;
+    background-color: rgb(55, 55, 123);
+    font-size: 35px;
+}
+.btn:hover{
+    color: yellow;
+}
+
+
+
+
+/* تنسيق قسم المنيو */
+.menu-section {
+  padding: 80px 8%;
+  background-color: #141213; /* خلفية داكنة تتناسب مع الطابع العام */
+  color: #ffffff;
+  text-align: center;
+  direction: rtl;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #e6a15c;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #e6a15c;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* شبكة الكروت بالـ Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* رص الكروت تلقائياً وبشكل متجوب */
+  gap: 30px;
+}
+
+/* تصميم الكارت */
+.card {
+  background-color: #1f1c1d;
+  border-radius: 15px; /* حواف دائرية */
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* ظل للكارت */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تنعيم الحركة */
+  display: flex;
+  flex-direction: column;
+}
+
+/* تأثير التكبير والبروز عند الوقوف بالماوس (:hover) */
+.card:hover {
+  transform: translateY(-10px) scale(1.02); /* رفع الكارت وتكبيره بلمسة بسيطة */
+  box-shadow: 0 12px 25px rgba(230, 161, 92, 0.25); /* إضاءة وظل ذهبي تحت الكارت */
+}
+
+/* صورة الكارت */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* تفاصيل الكارت */
+.card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.card-info h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* السعر والزر */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e6a15c;
+}
+
+.order-btn {
+  padding: 8px 20px;
+  background-color: #e6a15c;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.order-btn:hover {
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+
+/* تنسيق قسم التواصل */
+.contact-section {
+  padding: 80px 10%;
+  background-color: #0f0d0e;
+  color: #ffffff;
+  text-align: center;
+  direction: rtl;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 40px;
+  text-align: right;
+  flex-wrap: wrap;
+}
+
+/* بطاقة المعلومات والنموذج */
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #191718;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2a2728;
+}
+
+.contact-info h3, .contact-form h3 {
+  font-size: 1.5rem;
+  color: #e6a15c;
+  margin-bottom: 25px;
+}
+
+/* التنسيق الداخلي للمعلومات */
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item strong {
+  display: block;
+  color: #e6a15c;
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* تنسيق حقول النموذج */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #dddddd;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #0f0d0e;
+  border: 1px solid #332f31;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #e6a15c;
+}
+
+/* زر الإرسال */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e6a15c;
+  color: #111111;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c88342;
+}
+
+/* التجاوب مع الموبايل */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
