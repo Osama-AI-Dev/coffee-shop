@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="Stylesheet" href="style.css">
-
+    <meta name="description" content="تعرّف على قصة Coffee House وشغفنا بتقديم تجربة قهوة استثنائية.">
+    <title>من نحن | Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
-        <div class="logo"> <img src="logo.jpg" width="100px"> </div>
-        <a href="index.html" > Home </a>
-        <a href="menu.html"> Menu</a>
-        <a href="about.html"> About  </a>
-        <a href="contact.html"> Contact </a>
+        <div class="logo"><img src="logo.jpg" alt="Coffee House logo" width="100"></div>
+        <button class="nav-toggle" aria-label="فتح القائمة">☰</button>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="menu.html">المنيو</a>
+            <a href="about.html">من نحن</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
     </header>
-    <section id="about">
-        <div class="about-container">
 
-            <div class="about-content">
-                <h2>من نحن</h2>
-                <p>
-                     نحن شغوفون بتقديم تجربة قهوة استثنائية تأخذك في رحلة من الدفء والهدوء. نعتمد على أجود أنواع البن الطازج والمستورد بعناية، ونستخدم طرق تحميص خاصة تبرز غنى المذاق وعقيد النكهات. نوفر لك أجواءً هادئة ومريحة لتستمتع بكل فنجان وكأنه لحظتك الخاصة.
-                </p>
-                <a href="menu.html">
-                    <button class="btn" > استكشف المنيو</button>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>من نحن</h1>
+            <p>
+                نحن شغوفون بتقديم تجربة قهوة استثنائية تأخذك في رحلة من الدفء والهدوء. نعتمد على أجود أنواع البن الطازج المستورد بعناية،
+                ونستخدم طرق تحميص خاصة تبرز غنى المذاق وتعقيد النكهات. نوفّر لك أجواءً هادئة ومريحة لتستمتع بكل فنجان وكأنه لحظتك الخاصة.
+            </p>
+            <a href="menu.html" class="btn">استكشف المنيو</a>
 
-                </a>
+            <div class="about-features">
+                <div class="feature">
+                    <div class="icon">☕</div>
+                    <h4>بن مختص عالي الجودة</h4>
+                    <p>حبوب مختارة ومحمصة بعناية للحصول على أفضل نكهة.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🕯️</div>
+                    <h4>أجواء دافئة</h4>
+                    <p>مكان مصمم للاسترخاء والعمل والجلسات الهادئة.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">⏱️</div>
+                    <h4>خدمة سريعة</h4>
+                    <p>نحرص على راحتك من أول لحظة تدخل فيها.</p>
+                </div>
             </div>
         </div>
     </section>
-    
+
+    <footer class="site-footer">
+        &copy; 2026 <span>Coffee House</span>. جميع الحقوق محفوظة.
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

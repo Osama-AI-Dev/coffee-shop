@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="Stylesheet" href="style.css">
+    <meta name="description" content="Coffee House — أجواء دافئة وقهوة مختصة طازجة في قلب المدينة.">
+    <title>الرئيسية | Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
-        <div class="logo"> <img src="logo.jpg" width="100px"> </div>
-        <a href="index.html" > Home </a>
-        <a href="menu.html"> Menu</a>
-        <a href="about.html"> About  </a>
-        <a href="contact.html"> Contact </a>
+        <div class="logo"><img src="logo.jpg" alt="Coffee House logo" width="100"></div>
+        <button class="nav-toggle" aria-label="فتح القائمة">☰</button>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="menu.html">المنيو</a>
+            <a href="about.html">من نحن</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
     </header>
-    <h1> ابدأ يومك بقهوة مصنوعة بحب</h1>
-    <p> أجواء تدعو للدفيء والهدوء، حيث يمتزج فيها عرق البن المحمص برذاذ القهوة الفوار ليخلق لوحة بصرية ساحرة تعبر عن الأصالة والانتعاش. المكان مصمم ليأخذك في رحلة حواس فريدة؛ فالإضاءة الخافطة والدافئة تمنح المكان طابعاً هادئاً ومريحاً للأعصاب، بينما يضيف اندفاع القهوة الحيوي لمشة من الطاقة والحيوية التي تُنعش يومك.</p>
-  
-    <a href="menu.html">
-            <button class="btn" > استكشف المنيو</button>
 
-    </a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ابدأ يومك بقهوة مصنوعة بحب</h1>
+            <p>
+                أجواء تدعو للدفء والهدوء، حيث يمتزج عبق البن المحمص برذاذ القهوة الفوّار ليخلق لوحة بصرية ساحرة تعبّر عن الأصالة والانتعاش.
+                المكان مصمم ليأخذك في رحلة حواس فريدة؛ فالإضاءة الخافتة الدافئة تمنحه طابعاً هادئاً ومريحاً للأعصاب، بينما يضيف اندفاع القهوة الحيوي لمسة من الطاقة تُنعش يومك.
+            </p>
+            <a href="menu.html" class="btn">استكشف المنيو</a>
+        </div>
+    </section>
 
+    <footer class="site-footer">
+        &copy; 2026 <span>Coffee House</span>. جميع الحقوق محفوظة.
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

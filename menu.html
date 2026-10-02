@@ -1,79 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="Stylesheet" href="style.css">
-
+    <meta name="description" content="استكشف قائمة مشروباتنا وحلوياتنا في Coffee House.">
+    <title>المنيو | Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
-        <div class="logo"> <img src="logo.jpg" width="100px"> </div>
-        <a href="index.html" > Home </a>
-        <a href="menu.html"> Menu</a>
-        <a href="about.html"> About  </a>
-        <a href="contact.html"> Contact </a>
+        <div class="logo"><img src="logo.jpg" alt="Coffee House logo" width="100"></div>
+        <button class="nav-toggle" aria-label="فتح القائمة">☰</button>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="menu.html">المنيو</a>
+            <a href="about.html">من نحن</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
     </header>
 
     <section id="menu" class="menu-section">
-  <h2 class="section-title">أبرز المشروبات والأصناف</h2>
-  
-  <div class="menu-grid">
-    
-    <!-- الكارت 1: إسبريسو -->
-    <div class="card">
-      <img src="https://modo3.com/thumbs/fit630x300/45813/1433675359/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%B9%D9%85%D9%84_%D9%82%D9%87%D9%88%D8%A9_%D8%A7%D8%B3%D8%A8%D8%B1%D9%8A%D8%B3%D9%88.jpg" alt="إسبريسو">
-      <div class="card-info">
-        <h3>إسبريسو / Espresso</h3>
-        <p>جرعة مركزة من البن الغني بالنكهة مع طبقة كريمة غنية.</p>
-        <div class="card-bottom">
-          <span class="price">45 EGP</span>
-          <button class="order-btn">طلب</button>
-        </div>
-      </div>
-    </div>
+        <div class="container">
+            <h2 class="section-title">أبرز المشروبات والأصناف</h2>
+            <p class="section-subtitle">مختارات يومية طازجة من قهوتنا وحلوياتنا</p>
 
-    <!-- الكارت 2: كابتشينو -->
-    <div class="card">
-      <img src="https://ordercafenajjareg.com/cdn/shop/articles/962067612ed3efd727d11147700fb3d8_9180bd34-331c-4546-ab2a-9a56c8ab1ab8.webp?v=1783809388&width=1200" alt="كابتشينو">
-      <div class="card-info">
-        <h3>كابتشينو / Cappuccino</h3>
-        <p>مزيج متوازن من الإسبريسو والحليب المبخر مع رغوة كثيفة.</p>
-        <div class="card-bottom">
-          <span class="price">65 EGP</span>
-          <button class="order-btn">طلب</button>
-        </div>
-      </div>
-    </div>
+            <div class="menu-grid">
+                <div class="card">
+                    <div class="card-media"><img src="images/espresso.jpg" alt="إسبريسو"></div>
+                    <div class="card-info">
+                        <h3>إسبريسو / Espresso</h3>
+                        <p>جرعة مركزة من البن الغني بالنكهة مع طبقة كريمة غنية.</p>
+                        <div class="card-bottom">
+                            <span class="price">45 EGP</span>
+                            <button class="order-btn">طلب</button>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- الكارت 3: أيس لاتيه -->
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiq4AOuot9TPxTnm1wzOYoST0inRv5KbA8LJ4FmwFd7w1p4Hld-oDvk60&s=10" alt="أيس لاتيه">
-      <div class="card-info">
-        <h3>أيس لاتيه / Iced Latte</h3>
-        <p>إسبريسو بارد منعش مع حليب مثلج وقطرات سائل السكر.</p>
-        <div class="card-bottom">
-          <span class="price">70 EGP</span>
-          <button class="order-btn">طلب</button>
-        </div>
-      </div>
-    </div>
+                <div class="card">
+                    <div class="card-media"><img src="images/cappuccino.jpg" alt="كابتشينو"></div>
+                    <div class="card-info">
+                        <h3>كابتشينو / Cappuccino</h3>
+                        <p>مزيج متوازن من الإسبريسو والحليب المبخر مع رغوة كثيفة.</p>
+                        <div class="card-bottom">
+                            <span class="price">65 EGP</span>
+                            <button class="order-btn">طلب</button>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- الكارت 4: حلى -->
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEpPSnbP3MDdiZg6EksttISN4ULwles6MTVb2wAlYLA&s" alt="تشيز كيك">
-      <div class="card-info">
-        <h3>تشيز كيك / Cheesecake</h3>
-        <p>شريحة تشيز كيك هشة وغنية بصوص التوت البري الطازج.</p>
-        <div class="card-bottom">
-          <span class="price">80 EGP</span>
-          <button class="order-btn">طلب</button>
-        </div>
-      </div>
-    </div>
+                <div class="card">
+                    <div class="card-media"><img src="images/iced-latte.jpg" alt="أيس لاتيه"></div>
+                    <div class="card-info">
+                        <h3>أيس لاتيه / Iced Latte</h3>
+                        <p>إسبريسو بارد منعش مع حليب مثلج وقطرات من سائل السكر.</p>
+                        <div class="card-bottom">
+                            <span class="price">70 EGP</span>
+                            <button class="order-btn">طلب</button>
+                        </div>
+                    </div>
+                </div>
 
-  </div>
-</section>
+                <div class="card">
+                    <div class="card-media"><img src="images/cheesecake.jpg" alt="تشيز كيك"></div>
+                    <div class="card-info">
+                        <h3>تشيز كيك / Cheesecake</h3>
+                        <p>شريحة تشيز كيك هشة وغنية بصوص التوت البري الطازج.</p>
+                        <div class="card-bottom">
+                            <span class="price">80 EGP</span>
+                            <button class="order-btn">طلب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        &copy; 2026 <span>Coffee House</span>. جميع الحقوق محفوظة.
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
